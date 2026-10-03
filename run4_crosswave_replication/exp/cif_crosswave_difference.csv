@@ -1,0 +1,2 @@
+contrast,difference,SE,CI_lower,CI_upper,p_two_sided,variance_definition,interpretation
+CIF80_10_2023_minus_2019,0.261387524387672,0.16460223733079474,-0.06123286078068568,0.5840079095560297,0.11228747728882212,independent repeated cross-sectional wave estimates: Var(2023)+Var(2019),no evidence of wave difference

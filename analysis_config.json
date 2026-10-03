@@ -1,0 +1,81 @@
+{
+  "data_2023_path": "data/SSES R2 ST PUF INTERNATIONAL.dta",
+  "data_2023_sha256": "933d020b24fa2db086def2795a333f74fac6bac8de1b621640843502790b4646",
+  "data_2019_path": "data/INT_01_ST_2021.04.14_Public.dta",
+  "data_2019_sha256": "20c1f7a49aa9b4f34a69e1ef82b9ba5cc25a6e903993fd74617f8d19301bfb84",
+  "site_variable": "Site",
+  "site_id_variable": "SiteID",
+  "cohort_variable": "CohortID",
+  "cohort_labels": {
+    "1": "Younger",
+    "2": "Older"
+  },
+  "id_variable": "FullID",
+  "achievement_variables": [
+    "Sgrade_Math",
+    "Sgrade_Read_Lang"
+  ],
+  "development_variables_2023": [
+    "CUR_WLE_ADJ",
+    "CRE_WLE_ADJ",
+    "SOC_WLE_ADJ",
+    "ST_WELLBEING"
+  ],
+  "development_variables_2019": [
+    "CUR_WLE_ADJ",
+    "CRE_WLE_ADJ",
+    "SOC_WLE_ADJ",
+    "st_wellbeing"
+  ],
+  "weight_2023": "WT2023",
+  "weight_2019": "WT2019",
+  "replicate_prefix": "rwgt",
+  "replicate_count_2023": 80,
+  "replicate_count_2019": 76,
+  "fay_coefficient": 0.5,
+  "fay_brr_variance_multiplier": 0.05,
+  "fay_brr_variance_formula": "0.05 * sum((theta_r - theta_full)^2), r=1,...,80",
+  "jrr_variance_formula_2019": "0.5 * sum((theta_r - theta_full)^2), r=1,...,76",
+  "missing_value_threshold": 9000,
+  "selection_capacities": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5
+  ],
+  "primary_capacity": 0.1,
+  "primary_gradient_contrast": [
+    0.1,
+    0.5
+  ],
+  "capture_targets": [
+    0.5,
+    0.8
+  ],
+  "development_target_capacities": [
+    0.05,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "primary_capture_target": 0.8,
+  "deciles": 10,
+  "near_match_permutations": 999,
+  "random_seed": 20260828,
+  "primary_site_statistic": "weighted Pearson correlation between weighted achievement midrank and weighted Pareto-depth rank score",
+  "primary_quality_sensitivity_excluded_sites": [
+    "DEL",
+    "HEL",
+    "KUN",
+    "UKR"
+  ],
+  "quality_sensitivity_source": "SSES 2023 Technical Report Table 14.2, student adjudication Group > 1",
+  "cross_wave_policy": "wave-specific analyses; effect-level comparisons only; no pooling of student records",
+  "workers_default": 4
+}
